@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+
+.down{
+   display: flex;
+   width: 900px;
+   height: 200px;
+   justify-content: center;
+   align-items: center;
+}
+
+
+span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 40px;
+}
+
+
+.down .items{
+    margin: 0 15px;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: aliceblue;
+}
+
+
+.items p{
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.text{
+    font-size: 80px;
+    display: unset;
+    position: absolute;
+    color: #fff;
+    top: 10%;
+    display: flex;
+}
+
+h1{
+    margin: 0 15px;
+}
+
+.it1{
+    color: rgb(218, 21, 201);
+   
+}
+
+.it2{
+    color: rgb(218, 21, 47);
+    transition: 0.5s;
+    
+}
+
+.it3{
+    color: rgb(205, 218, 21);
+    transition: 0.5s;
+
+}
+
+.it4{
+    color: rgba(4, 143, 224, 0.932);
+    transition: 0.5s;
+
+}
+
+.text:hover .it1{
+    animation: animation 1s linear;
+}
+
+.text:hover .it2{
+    transform: translateY(-30px);
+}
+
+.text:hover .it3{
+    transform: translateY(-30px);
+}
+
+.text:hover .it4{
+    transform: translateY(-30px);
+}
+
+@keyframes animation {
+    0%{
+        transform: translateY(-30px);
+        transition: 0.5s;
+    }
+
+    100%{
+        transform: translateY(30px);
+        transition: 0.5s;
+    }
+}
